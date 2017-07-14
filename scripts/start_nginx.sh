@@ -2,6 +2,7 @@
 
 set -e -x
 
-cp ../nginx.conf /etc/nginx/nginx.conf
-cp ../sites/www/html/index.html /var/www/html/index.html
+cp nginx.conf /etc/nginx/nginx.conf
+cp sites/www/html/index.html /var/www/html/index.html
+nginx -g "daemon off;"
 
